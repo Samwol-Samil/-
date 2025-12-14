@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect, useRef } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 import { Character, LogEntry, SaveData } from './types';
 import { INITIAL_CHARACTERS, MAX_RELATIONSHIP, MIN_RELATIONSHIP } from './constants';
 import { generateDaySimulation } from './services/geminiService';
