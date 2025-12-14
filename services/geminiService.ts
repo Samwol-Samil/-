@@ -27,7 +27,7 @@ export const generateDaySimulation = async (
   const prompt = `Day ${day}. Chars: ${JSON.stringify(characterContext)}.
 Rules:
 1. Generate 3 logs total.
-2. MANDATORY: One log MUST be a short dialogue between 2 chars (Format: "Name A: '...' / Name B: '...'").
+2. MANDATORY: One log MUST be a short dialogue between 2 RANDOMLY CHOSEN characters. Format: "Name A: '...'\nName B: '...'" (Use newline).
 3. MANDATORY: Generate at least 4-6 relationship updates. Mix small random fluctuations (-5 to +5) and event-based changes. Relationships must change every day.
 4. Logic: Marriage(>90 affinity & Dating), Fired(Lazy/Negative), Cheating(Partnered char flirts -> Breakup).
 5. Style: Concise, dry. No emojis.

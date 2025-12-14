@@ -46,8 +46,8 @@ const LogViewer: React.FC<LogViewerProps> = ({ logs }) => {
         )}
         {logs.map((log) => (
           <div key={log.id} className="text-sm animate-fade-in border-b border-gray-800/50 pb-1 last:border-0">
-            <span className="text-gray-600 mr-2 text-xs">Day {log.day}</span>
-            <span className={getTypeStyle(log.type)}>
+            <span className="text-gray-600 mr-2 text-xs select-none">Day {log.day}</span>
+            <span className={`${getTypeStyle(log.type)} whitespace-pre-wrap`}>
               {log.text}
             </span>
           </div>
