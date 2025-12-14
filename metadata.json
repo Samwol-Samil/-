@@ -1,0 +1,5 @@
+{
+  "name": "비령 상사 시뮬레이터",
+  "description": "A text-log based office simulation where you observe the chaotic lives of employees. Watch relationships evolve, rivalries spark, and romance bloom.",
+  "requestFramePermissions": []
+}
